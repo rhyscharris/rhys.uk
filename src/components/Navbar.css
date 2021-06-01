@@ -1,5 +1,10 @@
+:root {
+  --primary: linear-gradient(90deg, rgba(42,245,152,1) 0%, rgba(8,174,234,1) 100%);
+  --grey: #747474;
+}
+
 .navbar {
-    background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(51, 45, 45) 100%);
+    background: #fff;
     height: 80px;
     display: flex;
     justify-content: center;
@@ -19,7 +24,7 @@
   }
   
   .navbar-logo {
-    color: #fff;
+    color: var(--grey);
     justify-self: start;
     margin: 0 1.5rem;
     cursor: pointer;
@@ -44,13 +49,13 @@
     justify-content: center;
     margin-right: 2rem;
   }
-  
+   
   .nav-item {
     height: 80px;
   }
   
   .nav-links {
-    color: #fff;
+    color: var(--grey);
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -64,7 +69,7 @@
   }
   
   .fa-bars {
-    color: #fff;
+    color: var(--grey);
   }
   
   .nav-links-mobile {
