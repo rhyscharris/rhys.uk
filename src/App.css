@@ -2,8 +2,32 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'PT Sans', sans-serif;
+    font-family: commuters_sansregular, sans-serif;
   }
+
+  @font-face {
+    font-family: 'commuters_sansbold';
+    src: url('components/fonts/commuterssans-bold-webfont.woff2') format('woff2'),
+         url('components/fonts/commuterssans-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'commuters_sansregular';
+    src: url('components/fonts/commuterssans-regular-webfont.woff2') format('woff2'),
+         url('components/fonts/commuterssans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'commuters_sanslight';
+    src: url('components/fonts/commuterssans-light-webfont.woff2') format('woff2'),
+         url('components/fonts/commuterssans-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
   
   .home,
   .services,
