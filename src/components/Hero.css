@@ -21,8 +21,8 @@
     overflow: hidden;
     padding: 0 calc(35vw - 10rem);
     height: calc(3rem + 25vw);
-    min-height: 300px;
-    max-height: 500px;
+    min-height: 350px;
+    max-height: 550px;
     background: var(--primary);
 }
 
@@ -75,11 +75,42 @@
     right: -15px
 }
 
-@media (max-width: 700px) {
-    .hero-items img {
+.hero-text {
+    z-index:99;
+}
+
+@media (max-width: 55em) {
+    .person-image  {
         display: none;
     }
-    .hero-items {
+    .hero-text {
         text-align: center;
+    }
+}
+
+
+
+@media (max-width: 45em) {
+    .hero-container {
+        min-height: 400px;
+    }
+    .image-right {
+        display: none;
+    }
+    .image-left {
+        width: 100%;
+        left: 0;
+    }
+    .hero-image img {
+        height: auto;
+        width: 100%;
+        position: absolute;
+        bottom: 0px;
+    }
+    .hero-items h1 {
+        font-size: 3.5em;
+    }
+    .hero-text {
+        padding: 6rem 0 38%;
     }
 }
