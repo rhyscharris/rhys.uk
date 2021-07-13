@@ -19,7 +19,7 @@
 .hero-container {
     position: relative;
     overflow: hidden;
-    padding: 0 calc(35vw - 10rem);
+    padding: 0 calc(37vw - 10rem);
     height: calc(3rem + 25vw);
     min-height: 350px;
     max-height: 550px;
@@ -37,7 +37,9 @@
 
 .hero-items {
     color: white;
-    margin: 0 5%;
+    margin: 0 0%;
+    padding-bottom: 50px;
+
 }
 
 .hero-items img {

@@ -35,7 +35,7 @@ function Hero () {
                     <p>A Systems Engineer by day, Digital Designer and occasional coder by night.</p>
                 </div>
                 <div className='hero-items person-image'>
-                    <img src={person} alt='Picture of person'></img>
+                    <img src={person} alt='Rhys Harris'></img>
                 </div>
                 <div className='hero-image image-right'>
                     {/*<img src={rightshapes} alt='Colourful 3D shapes'></img>*/}
