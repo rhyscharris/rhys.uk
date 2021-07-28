@@ -1,7 +1,11 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { Button } from './Buttons';
 
 export function CardItem(props) {
+  const [click, setClick] = useState(false);
+  const [button, setButton] = useState(true);
+
   return (
     <>
       <li className='cards-item'>
@@ -9,6 +13,10 @@ export function CardItem(props) {
           <div className='cards-item-text'>
             <h5 className='cards-item-title'>{props.title}</h5>
             <p>{props.text}</p>
+            <div className='button-group'>
+              {button && <Button buttonStyle='btn--outline--two'>{props.buttonText}</Button>}
+              {button && <Button buttonStyle='btn--outline--two'>{props.buttonText2}</Button>}
+            </div>
           </div>
           <img
             className='cards-item-img'

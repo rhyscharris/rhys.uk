@@ -9,20 +9,22 @@ function Cards() {
           <div className='cards-wrapper'>
             <ul className='cards-items'>
               <CardItemNoImage
-                title='Title Title Title Title Title Title Title in a title'
-                text='text'
+                title='About'
+                text='I currently work at Cisco as a Systems Engineer (technical pre-sales), based in London. I hold a BSc in Digital and Tech Solutions from the University of Roehampton, as well as CCNP and DevNet Associate cerficaitions. I am interested in design, coding, and technical projects.'
                 path='/'
               />
               <CardItem
                 src='images/behance.png'
-                title='Title Title Title Title Title Title Title in a title'
-                text='text'
+                title='Design Projects'
+                text='Since 2012, I have had a strong interest in digital design, including branding, logos, UI, UX, and web development. An assortment of my design projects can be found on my Behance page. This website was also designed and created by me.'
                 path='/'
+                buttonText='TESTBUTTON1'
+                buttonText2='TESTBUTTON2'
               />
               <CardItem
                 src='images/behance.png'
-                title='Title Title Title Title Title Title Title in a title'
-                text='text'
+                title='SongScore'
+                text='A social music website for reviewing music, following friends, and for discovering new music. Built in Python, Flask, and PostgreSQL - with security in mind.'
                 path='/'
               />
               <CardItem

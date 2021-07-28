@@ -1,14 +1,47 @@
 :root {
-    --primary: linear-gradient(90deg, rgba(42,245,152,1) 0%, rgba(8,174,234,1) 100%);
+    /*--primary: linear-gradient(90deg, rgba(42,245,152,1) 0%, rgba(8,174,234,1) 100%);*/
+    --buttonprimary: linear-gradient(to top, #08AEEA -10%, #2AF598 110%);
+    --teal: #19d2c0;
     --grey: #747474;
+}
+
+.btn--outline--two {
+    position: relative;
+    box-sizing: border-box;
+    color: var(--grey);
+    background: #fff;
+    background-clip: padding-box; /* !important */
+    border: solid 5px transparent; /* !important */
+    transition: all 0.1s ease-out;
+    border-radius: 1em;
+  }
+.btn--outline--two:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    margin: -4px; /* !important */
+    border-radius: inherit; /* !important */
+    background: var(--buttonprimary);
+    transition: all 0.1s ease-out;
+    
+  }
+  .btn--outline--two:hover {
+    background: var(--buttonprimary);
+    z-index: -0;
+    color: #fff;
+    transition: all 0.1s ease-out;
 }
 
 .btn {
     padding: 5px 15px;
+    margin-right: 10px;
     border-radius: 20px;
-    outline: none;
-    border: none;
     cursor: pointer;
+    font-size: 1em;
 }
 
 .btn--primary {
@@ -20,22 +53,23 @@
 .btn--outline {
     background-color: transparent;
     color: var(--grey);
-    border: 1px solid var(--primary);
+    border: 3px solid var(--teal);
     transition: all 0.1s ease-out;
 }
 
 .btn--medium {
-    padding: 5px 15px;
-    font-size: 20px;
+    padding: 8px 20px;
+    font-size: 1em;
 }
 
 .btn--large {
     padding: 12px 26px;
-    font-size: 20px;
+    font-size: 1.2em;
 }
 
 .btn--outline:hover {
     background: var(--primary);
+    border: 3px solid var(--teal);
     color: #fff;
     transition: all 0.1s ease-out;
 }

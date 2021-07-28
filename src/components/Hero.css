@@ -1,5 +1,5 @@
 :root {
-    --primary: linear-gradient(90deg, rgba(42,245,152,1) 0%, rgba(8,174,234,1) 100%);
+    --primary: linear-gradient(90deg, rgba(39, 255, 156,1) 20%, rgba(8,174,234,1) 80%);
     --grey: #747474;
     --teal: #19d2c0
 }
@@ -49,10 +49,14 @@
     min-width: 200px;
 }
 
-.hero-items h1 {
-    font-size: 5em;
+.hero-text h1 {
+    font-size: 4em;
     font-family: commuters_sansbold, sans-serif;
     letter-spacing: 10px;
+}
+.hero-text p {
+    font-size: 1.2em;
+    line-height: 1.7;
 }
 
 .hero-image {
