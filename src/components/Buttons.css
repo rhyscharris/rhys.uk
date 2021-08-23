@@ -1,8 +1,12 @@
 :root {
     /*--primary: linear-gradient(90deg, rgba(42,245,152,1) 0%, rgba(8,174,234,1) 100%);*/
-    --buttonprimary: linear-gradient(to top, #08AEEA -10%, #2AF598 110%);
+    --buttonprimary: linear-gradient(to left, #08AEEA -10%, #2AF598 110%);
     --teal: #19d2c0;
     --grey: #747474;
+}
+
+.button-group {
+    margin-top: 5px;
 }
 
 .btn--outline--two {
@@ -11,7 +15,7 @@
     color: var(--grey);
     background: #fff;
     background-clip: padding-box; /* !important */
-    border: solid 5px transparent; /* !important */
+    border: solid 3px transparent; /* !important */
     transition: all 0.1s ease-out;
     border-radius: 1em;
   }
@@ -23,22 +27,21 @@
     bottom: 0;
     left: 0;
     z-index: -1;
-    margin: -4px; /* !important */
+    margin: -3px; /* !important */
     border-radius: inherit; /* !important */
     background: var(--buttonprimary);
-    transition: all 0.1s ease-out;
+    transition: all 0.2s ease-out;
     
   }
   .btn--outline--two:hover {
-    background: var(--buttonprimary);
-    z-index: -0;
+    background: transparent;
     color: #fff;
-    transition: all 0.1s ease-out;
+    transition: all 0.2s ease-out;
 }
 
 .btn {
     padding: 5px 15px;
-    margin-right: 10px;
+    margin: 10px 10px 10px 0;
     border-radius: 20px;
     cursor: pointer;
     font-size: 1em;
@@ -50,15 +53,13 @@
     border: 1px solid #fff;
 }
 
-.btn--outline {
-    background-color: transparent;
-    color: var(--grey);
-    border: 3px solid var(--teal);
-    transition: all 0.1s ease-out;
+.btn--small {
+    padding: 5px 15px;
+    font-size: 0.8em;
 }
 
 .btn--medium {
-    padding: 8px 20px;
+    padding: 7px 18px;
     font-size: 1em;
 }
 

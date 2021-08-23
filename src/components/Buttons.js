@@ -12,6 +12,7 @@ export const Button = ({
     onClick,
     buttonStyle,
     buttonSize,
+    linkTo
 }) => {
     const checkButtonStyle = STYLES.includes(buttonStyle)
         ? buttonStyle /* if button HAS a style (aka above if it true), apply the one it has */
@@ -22,7 +23,7 @@ export const Button = ({
         : SIZES[0]; /* if the button DOES NOT have a size, apply the FIRST one in Styles array */
 
     return (
-        <Link to='/' className='btn-mobile'>
+        <a href={linkTo}>
             <button
                 className={`btn ${checkButtonSize} ${checkButtonStyle}`}
                 onClick={onClick}
@@ -30,6 +31,6 @@ export const Button = ({
             >
                 {children}
             </button>
-        </Link>
+        </a>
     )
 };
