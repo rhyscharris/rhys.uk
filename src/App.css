@@ -5,6 +5,10 @@
     font-family: commuters_sansregular, sans-serif;
   }
 
+  html {
+    background: #ecececec;
+  }
+
 
   @font-face {
     font-family: 'commuters_sansbold';

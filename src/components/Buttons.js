@@ -12,7 +12,8 @@ export const Button = ({
     onClick,
     buttonStyle,
     buttonSize,
-    linkTo
+    linkTo,
+    buttonIcon
 }) => {
     const checkButtonStyle = STYLES.includes(buttonStyle)
         ? buttonStyle /* if button HAS a style (aka above if it true), apply the one it has */
@@ -30,6 +31,7 @@ export const Button = ({
                 type={type}
             >
                 {children}
+                <i class={'fa ' + buttonIcon}></i>
             </button>
         </a>
     )
