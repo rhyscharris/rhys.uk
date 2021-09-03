@@ -35,8 +35,8 @@ export const Button = ({
                 onClick={onClick}
                 type={type}
             >
+                <FontAwesomeIcon icon={faCoffee}></FontAwesomeIcon>
                 {children}
-                <FontAwesomeIcon icon="coffee"></FontAwesomeIcon>
                 {/*<i class={'fa ' + buttonIcon}></i> <- removed since not using html i anymore*/}
             </button>
         </a>
