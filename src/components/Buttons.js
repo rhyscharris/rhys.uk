@@ -2,9 +2,7 @@ import React from 'react';
 import './Buttons.css';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 
-const element = <FontAwesomeIcon icon={faCoffee} />
 
 const STYLES = ['btn--primary', 'btn--outline', 'btn--outline--two'];
 
@@ -35,7 +33,7 @@ export const Button = ({
                 onClick={onClick}
                 type={type}
             >
-                <FontAwesomeIcon icon={faCoffee}></FontAwesomeIcon>
+                <FontAwesomeIcon icon={buttonIcon}></FontAwesomeIcon>
                 {children}
                 {/*<i class={'fa ' + buttonIcon}></i> <- removed since not using html i anymore*/}
             </button>

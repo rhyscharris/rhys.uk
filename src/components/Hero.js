@@ -14,7 +14,7 @@ import rightshapesmobile from './right-shapes-mobile.png'
 import leftshapesmobile2x from './left-shapes-mobile-2x.png'
 import rightshapesmobile2x from './right-shapes-mobile-2x.png'
 
-
+import Typewriter from "typewriter-effect";
 
 function Hero () {
     return (
@@ -30,7 +30,25 @@ function Hero () {
                     </picture>
                 </div>
                 <div className='hero-items hero-text'>
-                    <p>Hello</p>
+                    <p className='stroke-text'>
+                        <Typewriter
+                            options={{
+                            loop: true
+                            }}
+                            onInit={(typewriter) => {
+                                typewriter
+                                    .typeString("Hello").start()
+                                    .pauseFor(1500)
+                                    .deleteAll()
+                                    .typeString("Yo").start()
+                                    .pauseFor(1500)
+                                    .deleteAll()
+                                    .typeString("What's up").start()
+                                    .pauseFor(1500)
+                                    .deleteAll()
+                            }}
+                        />
+                    </p>
                     <h1>I'm Rhys</h1>
                     <p>A Systems Engineer by day, Digital Designer and occasional coder by night.</p>
                 </div>

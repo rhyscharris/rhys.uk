@@ -45,6 +45,7 @@
     border-radius: 20px;
     cursor: pointer;
     font-size: 1em;
+    font-family: 'commuters_sanslight',sans-serif;
 }
 
 .btn--primary {
@@ -73,4 +74,11 @@
     border: 3px solid var(--teal);
     color: #fff;
     transition: all 0.1s ease-out;
+}
+
+.svg-inline--fa {
+    margin-right: 7px;
+}
+.svg-inline--fa.fa-w-20 {
+    /*width: 1em;*/
 }
