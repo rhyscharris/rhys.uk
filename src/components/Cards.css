@@ -77,4 +77,10 @@
       margin-bottom: 2rem;
     }
   }
+
+  @media only screen and (max-width: 550px) {
+    .cards-item-img {
+      display: none;
+    }
+  }
   

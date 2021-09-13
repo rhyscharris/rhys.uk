@@ -1,15 +1,20 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from './Buttons';
+import 'aos/dist/aos.css';
+import Aos from 'aos';
 
 
 export function CardItem(props) {
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
+  useEffect(() => {
+    Aos.init({duration:500});
+  }, []);  
 
   return (
     <>
-      <li className='cards-item'>
+      <li className='cards-item' data-aos='fade-right'>
         <div className='cards-item-container'>
           <div className='cards-item-text'>
             <h5 className='cards-item-title'>{props.title}</h5>
