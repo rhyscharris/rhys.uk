@@ -23,7 +23,7 @@ function Hero () {
                 <div className='hero-image image-left'>
                     <picture>
                         <source media="(min-width: 75em)" src={leftshapes} srcSet={`${leftshapes} 631w, ${leftshapes2x} 1262w`} />
-                        <source media="(min-width: 45em)" src={leftshapesmobile} srcSet={`${leftshapesmobile} 279w, ${leftshapesmobile2x} 558w`} />
+                        <source media="(min-width: 65em)" src={leftshapesmobile} srcSet={`${leftshapesmobile} 279w, ${leftshapesmobile2x} 558w`} />
                         <source sizes="" src={bottomshapes} />
                         {/*<source sizes="100vw" src="https://res.cloudinary.com/pitch-software/image/upload/f_auto/v1616774380/website-assets/press/hands_small.png" srcset="https://res.cloudinary.com/pitch-software/image/upload/f_auto/v1616774380/website-assets/press/hands_small_2x.png 375w,https://res.cloudinary.com/pitch-software/image/upload/f_auto/v1616774380/website-assets/press/hands_small_2x.png 750w"></source>*/}
                         <img src={bottomshapes} alt='Colourful 3D shapes'></img>
