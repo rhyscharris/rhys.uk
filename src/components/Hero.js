@@ -22,8 +22,8 @@ function Hero () {
             <div className='hero-container-inner'>
                 <div className='hero-image image-left'>
                     <picture>
-                        <source media="(min-width: 75em)" src={leftshapes} srcSet={`${leftshapes} 631w, ${leftshapes2x} 1262w`} />
-                        <source media="(min-width: 65em)" src={leftshapesmobile} srcSet={`${leftshapesmobile} 279w, ${leftshapesmobile2x} 558w`} />
+                        <source media="(min-width: 85em)" src={leftshapes} srcSet={`${leftshapes} 631w, ${leftshapes2x} 1262w`} /> {/* XXXw is the max-width of the image in pixels */}
+                        <source media="(min-width: 45em)" src={leftshapesmobile} srcSet={`${leftshapesmobile} 279w, ${leftshapesmobile2x} 558w`} />
                         <source sizes="" src={bottomshapes} />
                         {/*<source sizes="100vw" src="https://res.cloudinary.com/pitch-software/image/upload/f_auto/v1616774380/website-assets/press/hands_small.png" srcset="https://res.cloudinary.com/pitch-software/image/upload/f_auto/v1616774380/website-assets/press/hands_small_2x.png 375w,https://res.cloudinary.com/pitch-software/image/upload/f_auto/v1616774380/website-assets/press/hands_small_2x.png 750w"></source>*/}
                         <img src={bottomshapes} alt='Colourful 3D shapes'></img>
@@ -58,7 +58,7 @@ function Hero () {
                 <div className='hero-image image-right'>
                     {/*<img src={rightshapes} alt='Colourful 3D shapes'></img>*/}
                     <picture>
-                        <source media="(min-width: 75em)" src={rightshapes} srcSet={`${rightshapes} 631w, ${rightshapes2x} 1262w`} />
+                        <source media="(min-width: 85em)" src={rightshapes} srcSet={`${rightshapes} 631w, ${rightshapes2x} 1262w`} />
                         <source media="(min-width: 45em)" src={rightshapesmobile} srcSet={`${rightshapesmobile} 279w, ${rightshapesmobile2x} 558w`} />
                         <img src={rightshapes} alt='Colourful 3D shapes'></img>
                     </picture>
