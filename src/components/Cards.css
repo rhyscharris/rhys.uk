@@ -1,6 +1,6 @@
 .cards {
     margin-top: -2rem;
-    background: #ecececec;
+    background: var(--background);
   }
 
   .cards-container {
@@ -18,7 +18,7 @@
     display: flex;
     margin-bottom: 2rem;
     border-radius: 10px;
-    background-color: #fff;
+    background-color: var(--card-background);
     z-index: 0;
     box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
   }
@@ -42,7 +42,7 @@
   }
 
   .cards-item-text p {
-    color: var(--grey);
+    color: var(--text-primary);
     font-family: 'commuters_sanslight',sans-serif;
     line-height: 1.8;
   }

@@ -5,9 +5,29 @@
     font-family: commuters_sansregular, sans-serif;
   }
 
-  html {
-    background: #ecececec;
-  }
+:root {
+  --primary: linear-gradient(90deg, rgb(35, 221, 137) 20%, rgb(8,174,234) 80%);
+  --text-primary: #747474;
+  --teal: #19d2c0;
+  --buttonprimary: linear-gradient(to left, #08AEEA -10%, #2AF598 110%);
+  --background: #ecececec;
+  --card-background: #fff;
+  --button-background: #fff;
+}
+[data-theme='dark'] {
+  --background: black;
+  --text-primary: white;
+  --text-secondary: grey;
+  --accent: darkred;
+  --card-background: #494949ec;
+  --button-background: none;
+}
+
+html {
+  background: var(--background);
+}
+
+
 
 
   @font-face {

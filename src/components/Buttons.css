@@ -1,10 +1,3 @@
-:root {
-    /*--primary: linear-gradient(90deg, rgba(42,245,152,1) 0%, rgba(8,174,234,1) 100%);*/
-    --buttonprimary: linear-gradient(to left, #08AEEA -10%, #2AF598 110%);
-    --teal: #19d2c0;
-    --grey: #747474;
-}
-
 .button-group {
     margin-top: 5px;
 }
@@ -12,8 +5,8 @@
 .btn--outline--two {
     position: relative;
     box-sizing: border-box;
-    color: var(--grey);
-    background: #fff;
+    color: var(--text-primary);
+    background: var(--button-background);
     background-clip: padding-box; /* !important */
     border: solid 3px transparent; /* !important */
     transition: all 0.1s ease-out;
