@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react'
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 
-function Navbar() {
+function Navbar(props) {
     const [click, setClick] = useState(false);
     const [button, setButton] = useState(true);
 
@@ -47,7 +47,7 @@ function Navbar() {
                             <img
                                 className=''
                                 alt=''
-                                src={'images/logo-white-no-bg.png'}
+                                src={props.src}
                             />
                         </Link>
                         <li className='nav-item'>

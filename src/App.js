@@ -13,11 +13,12 @@ function App() {
     const newTheme = theme === 'light' ? 'dark' : 'light';
     setTheme(newTheme);
   }
+  const logoSource2 = theme === 'light' ? 'images/logo-grey-no-bg.png' : 'images/logo-white-no-bg.png';
   return (
     <>
       <Router>
         <div class="app" data-theme={theme}>
-          <Navbar />
+          <Navbar src={logoSource2}/>
           <Switch>
             <Route path='/' exact component = {Home} />
           </Switch>
