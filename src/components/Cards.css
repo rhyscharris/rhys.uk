@@ -56,7 +56,7 @@
     background: #08AEEA;
     background: -webkit-linear-gradient(to top, #08AEEA 15%, #2AF598 85%);
     background: -moz-linear-gradient(to top, #08AEEA 15%, #2AF598 85%);
-    background: linear-gradient(to top, #08AEEA 15%, #2AF598 85%);
+    background: var(--gradient-text);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }

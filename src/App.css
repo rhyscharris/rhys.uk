@@ -9,14 +9,15 @@
   --primary: linear-gradient(90deg, rgb(35, 221, 137) 20%, rgb(8,174,234) 80%);
   --text-primary: #747474;
   --teal: #19d2c0;
-  --buttonprimary: linear-gradient(to left, #08AEEA -10%, #2AF598 110%);
+  --buttonprimary: linear-gradient(to left, #08AEEA -10%, #23dd89 110%);
+  --gradient-text: linear-gradient(to top, #08AEEA 15%, #2AF598 85%);
   --background: #ecececec;
   --card-background: #fff;
   --button-background: #fff;
   --spacing: calc(1rem + 2vw);
 }
 [data-theme='dark'] {
-  --background: black;
+  --background: #1c181e;
   --text-primary: white;
   --text-secondary: grey;
   --accent: darkred;
