@@ -1,11 +1,22 @@
 import React, {useEffect, useState} from 'react'
 import { Link } from 'react-router-dom';
-/*import './Footer.css';*/
+import setTheme from '../App';
+import theme from '../App';
+import './Footer.css';
+import useLocalStorage from 'use-local-storage'
 
-function Footer() {
+
+
+function Footer({onClick, theme}) {
     return (
         <>
-            <p>hi</p>
+            <footer>
+                <div className="footer-wrapper">
+                    <button onClick={onClick}>
+                        Switch to {theme === 'light' ? 'Dark' : 'Light'} Theme
+                    </button>
+                </div>
+            </footer>
         </>
     )
 }

@@ -13,6 +13,7 @@
   --background: #ecececec;
   --card-background: #fff;
   --button-background: #fff;
+  --spacing: calc(1rem + 2vw);
 }
 [data-theme='dark'] {
   --background: black;
@@ -23,10 +24,9 @@
   --button-background: none;
 }
 
-html {
+.app {
   background: var(--background);
 }
-
 
 
 
