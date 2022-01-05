@@ -31,7 +31,6 @@ function Navbar() {
                         <i className={click ? 'fas fa-times' : 'fas fa-bars'} /> {/* on click, toggle class between these two icons */}
                     </div>
                     <Link to='/' className='navbar-logo mobile-only' onClick={closeMobileMenu}>
-                        RH
                     </Link>
                     <ul className={click ? 'nav-menu active' : 'nav-menu'}> {/* if true, make it active and manu class, if fales, make it just menu */}
                         <li className='nav-item'>
@@ -45,7 +44,11 @@ function Navbar() {
                             </Link>
                         </li>
                         <Link to='/' className='navbar-logo desktop-only'>
-                        RH
+                            <img
+                                className=''
+                                alt=''
+                                src={'images/logo-white-no-bg.png'}
+                            />
                         </Link>
                         <li className='nav-item'>
                             <Link to='/coding' className='nav-links' onClick={closeMobileMenu}> {/* once clicked, call function to close the mobile menu */}
