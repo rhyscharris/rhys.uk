@@ -11,7 +11,7 @@ footer {
     grid-template-rows: auto 1fr;
     grid-column-gap: 8.33333%;
     display: grid;
-    grid-gap: calc(var(--spacing) / 2) 0;
+    /*grid-gap: calc(var(--spacing) / 2) 0;*/
     padding: var(--spacing) 0;
     position: relative;
     margin-left: auto;
