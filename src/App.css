@@ -16,13 +16,15 @@
   --button-background: #fff;
   --spacing: calc(1rem + 2vw);
 }
-[data-theme='dark'] {
+@media (prefers-color-scheme: dark) {
+  :root {
   --background: #1c181e;
   --text-primary: white;
   --text-secondary: grey;
   --accent: darkred;
   --card-background: #494949;
   --button-background: none;
+  }
 }
 
 .app {

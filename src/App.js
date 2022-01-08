@@ -7,22 +7,17 @@ import Home from './components/pages/Home'
 import useLocalStorage from 'use-local-storage'
 
 function App() {
-  const defaultDark = window.matchMedia('(prefers-color-scheme: dark)').matches; /* Have they got a theme preference set? */
-  const [theme, setTheme] = useLocalStorage('theme', defaultDark ? 'dark' : 'light'); /* React Hook - If defaultDark true, keep user preference (dark). Otherwise, light theme. */
-  const switchTheme = () => {
-    const newTheme = theme === 'light' ? 'dark' : 'light';
-    setTheme(newTheme);
-  }
-  const logoSource2 = theme === 'light' ? 'images/logo-grey-no-bg.png' : 'images/logo-white-no-bg.png';
+
+  const logoSource2 = 'images/logo-grey-no-bg.png';
   return (
     <>
       <Router>
-        <div class="app" data-theme={theme}>
+        <div class="app">
           <Navbar src={logoSource2}/>
           <Switch>
             <Route path='/' exact component = {Home} />
           </Switch>
-          <Footer onClick={switchTheme} theme={theme}/>
+          <Footer/>
         </div>
       </Router>
     </>

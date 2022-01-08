@@ -29,7 +29,12 @@ function Footer({onClick, theme}) {
                             </li>
                         </ul>
                     </div>
-                    <button onClick={onClick} className='theme-button'>
+                    <select id="color-preference" aria-label="Select color scheme preference">
+                            <option value="auto">Auto</option>
+                            <option value="light">Light</option>
+                            <option value="dark">Dark</option>
+                    </select>
+                   <button onClick={onClick} className='theme-button'>
                         Switch to {theme === 'light' ? 'Dark' : 'Light'} Theme
                     </button>
                 </div>
