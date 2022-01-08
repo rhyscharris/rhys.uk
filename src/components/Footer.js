@@ -12,7 +12,7 @@ function Footer({onClick, theme}) {
         <>
             <footer>
                 <div className="footer-wrapper">
-                    <p className="footer-description">Built by myself (Rhys) using React Native, with the code viewable on GitHub. This site is hosted on GCP, and uses the font 'Commuter Sans'. No free cookies or tracking included.</p>
+                    <p className="footer-description">Built by myself (Rhys) using React Native, with the code viewable on GitHub. This site is hosted on GCP, and uses the font 'Commuter Sans'. No free cookies included, only tracking is your light/dark mode preferences.</p>
                     <div class="footer-links">
                         <p class="name"><a href="/">Rhys Harris</a></p>
                         <ul>
