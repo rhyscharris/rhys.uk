@@ -72,14 +72,11 @@ class Footer extends React.Component {
                                 </li>
                             </ul>
                         </div>
-                        <select value={this.state.value} onChange={this.handleChange} id="color-preference" aria-label="Select color scheme preference">
+                        <select value={this.state.value} onChange={this.handleChange} id="color-preference" className='theme-select' aria-label="Select color scheme preference">
                                 <option value="auto">Auto</option>
                                 <option value="light">Light</option>
                                 <option value="dark">Dark</option>
                         </select>
-                    <button className='theme-button'>
-                            Switch to {theme === 'light' ? 'Dark' : 'Light'} Theme
-                        </button>
                     </div>
                 </footer>
             </>

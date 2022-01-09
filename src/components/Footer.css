@@ -68,7 +68,7 @@ footer {
     vertical-align: baseline;
     margin-right: 1em;
 }
-.theme-button {
+.theme-select {
     grid-column: 2;
     grid-row: 1 / span 2;
 }
