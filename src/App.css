@@ -5,27 +5,48 @@
     font-family: commuters_sansregular, sans-serif;
   }
 
-:root {
+:root { /* variables consistent no matter what colour scheme */
   --primary: linear-gradient(90deg, rgb(35, 221, 137) 20%, rgb(8,174,234) 80%);
-  --text-primary: #747474;
   --teal: #19d2c0;
   --buttonprimary: linear-gradient(to left, #08AEEA -10%, #23dd89 110%);
   --gradient-text: linear-gradient(to top, #08AEEA 15%, #2AF598 85%);
+  --spacing: calc(1rem + 2vw);
+}
+
+[data-color-preference="auto"] { /*default to light mode if user doesn't support colour schemes*/
+  --text-primary: #747474;
   --background: #ecececec;
   --card-background: #fff;
   --button-background: #fff;
-  --spacing: calc(1rem + 2vw);
 }
 @media (prefers-color-scheme: dark) {
-  :root {
+  [data-color-preference="auto"] { /*if auto is selected on the <select>, and OS scheme is dark, use dark variables*/
+    --background: #1c181e;
+    --text-primary: white;
+    --text-secondary: grey;
+    --accent: darkred;
+    --card-background: #494949;
+    --button-background: none;
+  }
+}
+
+[data-color-preference="light"] { /* if light selected on the <select>, use light variables */
+  --text-primary: #747474;
+  --background: #ecececec;
+  --card-background: #fff;
+  --button-background: #fff;
+}
+
+[data-color-preference="dark"] { /* if dark selected on the <select>, use dark variables */
   --background: #1c181e;
   --text-primary: white;
   --text-secondary: grey;
   --accent: darkred;
   --card-background: #494949;
   --button-background: none;
-  }
 }
+
+
 
 .app {
   background: var(--background);
