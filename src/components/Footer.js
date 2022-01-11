@@ -73,7 +73,7 @@ class Footer extends React.Component {
                             </ul>
                         </div>
                         <select value={this.state.value} onChange={this.handleChange} id="color-preference" className='theme-select' aria-label="Select color scheme preference">
-                                <option value="auto">Auto</option>
+                                <option value="auto">Auto ({window.matchMedia('(prefers-color-scheme: dark)').matches ? "Dark)" : "Light)"}</option>
                                 <option value="light">Light</option>
                                 <option value="dark">Dark</option>
                         </select>
