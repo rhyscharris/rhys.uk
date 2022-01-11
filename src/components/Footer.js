@@ -72,11 +72,19 @@ class Footer extends React.Component {
                                 </li>
                             </ul>
                         </div>
-                        <select value={this.state.value} onChange={this.handleChange} id="color-preference" className='theme-select' aria-label="Select color scheme preference">
-                                <option value="auto">Detect ({window.matchMedia('(prefers-color-scheme: dark)').matches ? "Dark)" : "Light)"}</option>
-                                <option value="light">Light</option>
-                                <option value="dark">Dark</option>
-                        </select>
+                        <div className='footer-tools'>
+                            <div className='footer-line'>
+                                <label for='color-preference'>Colour</label>
+                                <div className='select-input'>
+                                    <select value={this.state.value} onChange={this.handleChange} id="color-preference" className='theme-select' aria-label="Select color scheme preference">
+                                        <option value="auto">Detect ({window.matchMedia('(prefers-color-scheme: dark)').matches ? "Dark)" : "Light)"}</option>
+                                        <option value="light">Light</option>
+                                        <option value="dark">Dark</option>
+                                    </select>
+                                    <svg width="10" height="10" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg"><path d="M5 9.63c.3 0 .47-.18.72-.63l4.03-7.68c.15-.28.25-.47.25-.67C10 .05 9.35 0 8.96 0H1.04C.64 0 0 .05 0 .65c0 .2.1.4.25.67L4.28 9c.25.45.42.63.72.63z" fill-rule="nonzero"></path></svg>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </footer>
             </>

@@ -68,7 +68,60 @@ footer {
     vertical-align: baseline;
     margin-right: 1em;
 }
-.theme-select {
+.footer-tools {
     grid-column: 2;
     grid-row: 1 / span 2;
+    display: block;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0 9.09091%;
+    flex-wrap: wrap;
+}
+.footer-line {
+    box-sizing: border-box;
+    display: flex;
+    margin-right: 0;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+.footer-line label {
+    font-weight: 600;
+    color: var(--teal);
+    min-width: 33.33333%;
+}
+.select-input {
+    flex: 1;
+    min-width: 50%;
+    display: inline-block;
+    position: relative;
+}
+.select-input svg {
+    position: absolute;
+    right: 0.25rem;
+    top: 50%;
+    margin-top: -0.05rem;
+    width: 0.25rem;
+    height: 0.25rem;
+    color: var(--text-primary);
+}
+.select-input path {
+    fill: currentColor;
+}
+.theme-select {
+    width: 100%;
+    font-variant-caps: all-small-caps;
+    font-size: 1.05em;
+    line-height: 1;
+    background: none;
+    color: var(--text-primary);
+    display: block;
+    appearance: none;
+    border: 0;
+    border-radius: 0;
+    outline: 0;
+    border-bottom: 2px solid var(--teal);
+    padding: 0.25rem 1rem 0.25em 0;
+    transition: border-color 125ms ease-in-out;
+    font-size: 1rem;
+    font-weight: 500;
 }
