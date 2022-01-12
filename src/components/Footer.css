@@ -125,3 +125,16 @@ footer {
     font-size: 1rem;
     font-weight: 500;
 }
+@media screen and (max-width: 700px){
+    .footer-tools {
+        grid-column: 1;
+        grid-row:unset;
+        margin-top:1em;
+    }
+    .footer-line label {
+        min-width: 15%;
+    }
+    .footer-wrapper {
+        display: block;
+    }
+}
