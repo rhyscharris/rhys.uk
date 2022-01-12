@@ -54,7 +54,7 @@
   }
   
   .nav-links {
-    color: var(--teal);
+    color: var(--accent);
     display: flex;
     align-items: center;
     text-decoration: none;
