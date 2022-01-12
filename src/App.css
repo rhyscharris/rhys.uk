@@ -5,7 +5,7 @@
     font-family: commuters_sansregular, sans-serif;
   }
 
-:root { /* variables consistent no matter what colour scheme */
+:root { /* variables that are consistent no matter what colour scheme */
   /*--primary: linear-gradient(90deg, rgb(35, 221, 137) 20%, rgb(8,174,234) 80%); OLD, BEFORE I USED 'PRETTY GRADIENTS'*/
   --primary: linear-gradient(90deg,
   hsl(153deg 73% 50%) 8%,
@@ -18,9 +18,31 @@
   hsl(192deg 100% 46%) 68%,
   hsl(194deg 100% 46%) 75%,
   hsl(196deg 93% 47%) 95%);
-  --teal: #19d2c0;
-  --buttonprimary: linear-gradient(to left, #08AEEA -10%, #23dd89 110%);
-  --gradient-text: linear-gradient(to top, #08AEEA 15%, #2AF598 85%);
+  /* old --buttonprimary: linear-gradient(to left, #08AEEA -10%, #23dd89 110%);*/
+  --buttonprimary: linear-gradient( 90deg,
+  hsl(153deg 73% 50%) 0%,
+  hsl(163deg 100% 43%) 11%,
+  hsl(169deg 100% 42%) 22%,
+  hsl(175deg 100% 41%) 33%,
+  hsl(181deg 100% 41%) 44%,
+  hsl(185deg 100% 43%) 56%,
+  hsl(189deg 100% 45%) 67%,
+  hsl(192deg 100% 46%) 78%,
+  hsl(194deg 100% 46%) 89%,
+  hsl(196deg 93% 47%) 100%
+  );
+  /*--gradient-text: linear-gradient(to top, #08AEEA 15%, #2AF598 85%);*/
+  --gradient-text: linear-gradient(180deg,
+  rgb(42, 255, 159) 10%,
+  hsl(163deg 100% 43%) 40%,
+  hsl(169deg 100% 42%) 44%,
+  hsl(175deg 100% 41%) 56%,
+  hsl(181deg 100% 41%) 64%,
+  hsl(185deg 100% 43%) 70%,
+  hsl(189deg 100% 45%) 76%,
+  hsl(192deg 100% 46%) 85%,
+  hsl(194deg 100% 46%) 90%,
+  hsl(196deg 93% 47%) 100%);
   --spacing: calc(1rem + 2vw);
 }
 
@@ -29,6 +51,7 @@
   --background: #ecececec;
   --card-background: #fff;
   --button-background: #fff;
+  --teal:#059691;
 }
 @media (prefers-color-scheme: dark) {
   [data-color-preference="auto"] { /*if auto is selected on the <select>, and OS scheme is dark, use dark variables*/
@@ -38,6 +61,7 @@
     --accent: darkred;
     --card-background: #494949;
     --button-background: none;
+    --teal: #07cfc7;
   }
 }
 
@@ -46,6 +70,7 @@
   --background: #ecececec;
   --card-background: #fff;
   --button-background: #fff;
+  --teal:#059691;
 }
 
 [data-color-preference="dark"] { /* if dark selected on the <select>, use dark variables */
@@ -55,6 +80,7 @@
   --accent: darkred;
   --card-background: #494949;
   --button-background: none;
+  --teal: #07cfc7;
 }
 
 
