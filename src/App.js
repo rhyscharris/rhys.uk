@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import Home from './components/pages/Home'
+import NoMatch from './components/pages/NoMatch'
 import useLocalStorage from 'use-local-storage'
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
           <Navbar src={logoSource2}/>
           <Switch>
             <Route path='/' exact component = {Home} />
+            <Route path="*" exact component = {NoMatch} />
           </Switch>
           <Footer/>
         </div>

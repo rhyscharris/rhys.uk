@@ -73,10 +73,12 @@
   --background: #ecececec;
   --card-background: #fff;
   --button-background: #fff;
+  --white-background: #fff;
 }
 @media (prefers-color-scheme: dark) {
   [data-color-preference="auto"] { /*if auto is selected on the <select>, and OS scheme is dark, use dark variables*/
     --background: #1c181e;
+    --white-background: #1c181e;
     --text-primary: white;
     --text-secondary: grey;
     --card-background: #494949;
@@ -89,6 +91,7 @@
   --background: #ecececec;
   --card-background: #fff;
   --button-background: #fff;
+  --white-background: #fff;
 }
 
 [data-color-preference="dark"] { /* if dark selected on the <select>, use dark variables */
@@ -97,6 +100,7 @@
   --text-secondary: grey;
   --card-background: #494949;
   --button-background: none;
+  --white-background: #1c181e;
 }
 
 
