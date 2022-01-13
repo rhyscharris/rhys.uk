@@ -87,7 +87,8 @@ class Footer extends React.Component {
                                     <select value={this.theme.value} onChange={this.handleThemeChange} id="theme-preference" className='theme-select' aria-label="Select color scheme preference">
                                         <option value="teal">Teal</option>
                                         <option value="purple">Purple</option>
-                                        <option value="red">Red</option>
+                                        <option value="sunrise">Sunrise</option>
+                                        <option value="pink/blue">Pink/Blue</option>
                                     </select>
                                     <svg width="10" height="10" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg"><path d="M5 9.63c.3 0 .47-.18.72-.63l4.03-7.68c.15-.28.25-.47.25-.67C10 .05 9.35 0 8.96 0H1.04C.64 0 0 .05 0 .65c0 .2.1.4.25.67L4.28 9c.25.45.42.63.72.63z" fill-rule="nonzero"></path></svg>
                                 </div>

@@ -64,7 +64,7 @@
 
 .btn--outline:hover {
     background: var(--primary);
-    border: 3px solid var(--teal);
+    border: 3px solid var(--accent);
     color: #fff;
     transition: all 0.1s ease-out;
 }

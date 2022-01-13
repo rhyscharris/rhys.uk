@@ -49,17 +49,23 @@
    hsl(194deg 100% 46%) 90%,
    hsl(196deg 93% 47%) 100%);
 }
-[data-theme-preference="red"] {
-  --primary: linear-gradient(90deg, #db3131 20%, #e4af1e 80%);
-  --buttonprimary: linear-gradient(to right, #db3131 -10%, #e4af1e 110%);
-  --gradient-text: linear-gradient(to top, #db3131 15%, #e4af1e 85%);
-  --accent:#c7531d;
+[data-theme-preference="sunrise"] {
+  --primary: linear-gradient(90deg, #FF4E50 20%, #F9D423 80%);
+  --buttonprimary: linear-gradient(to right, #FF4E50 -10%, #F9D423 110%);
+  --gradient-text: linear-gradient(to top, #FF4E50 15%, #F9D423 85%);
+  --accent:#f09753;
 }
 [data-theme-preference="purple"] {
   --primary: linear-gradient(90deg, #5926d8 20%, #8e68e6 80%);
   --buttonprimary: linear-gradient(to right, #5926d8 -10%, #8e68e6 110%);
   --gradient-text: linear-gradient(to top, #5926d8 15%, #8e68e6 85%);
   --accent:#6b3edd;
+}
+[data-theme-preference="pink/blue"] {
+  --primary: linear-gradient(90deg, #b6019b 20%, #2aabe4 80%);
+  --buttonprimary: linear-gradient(to right, #b6019b -10%, #2aabe4 110%);
+  --gradient-text: linear-gradient(to top, #b6019b 15%, #2aabe4 85%);
+  --accent:#6359b9;
 }
 
 [data-color-preference="auto"] { /*default to light mode if user doesn't support colour schemes*/
