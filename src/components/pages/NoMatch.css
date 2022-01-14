@@ -5,6 +5,25 @@ body,html,.app,#root {
     min-height: 100%;
     background: var(--white-background);
 }
+.center-group span{ /* The main typewriter title */
+    font-size: 1.5em;
+    font-family: commuters_sansbold, sans-serif;
+    letter-spacing: 5px;
+}
+.center-group h2 {
+    font-size: 1.2em;
+    line-height: 1.7;
+    letter-spacing: 2px;
+}
+.center-group a {
+    color: white;
+    text-decoration: none;
+}
+.center-group p {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1.5px white;
+    font-size: 2.5em !important;
+}
 .footer-wrapper:before {
     display: none;
 }
