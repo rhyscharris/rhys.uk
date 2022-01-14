@@ -103,13 +103,30 @@
   --white-background: #1c181e;
 }
 
-
-
 .app {
   background: var(--background);
 }
 
+.external-link {
+  text-decoration: underline;
+  color: inherit;
+}
 
+.external-link::after { /* any http and https links, apply the following */
+  content: '↗';
+  color: var(--accent);
+  font-weight: 500;
+  position: relative;
+  top: -0.4em;
+  font-style: normal;
+  letter-spacing: -0.15em;
+  margin-left: 0.05em;
+  margin-right: 0.2em;
+  font-size: 0.825em;
+  text-decoration: none;
+  text-decoration-color: var(--none);
+  display: inline-block
+}
 
   @font-face {
     font-family: 'commuters_sansbold';

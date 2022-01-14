@@ -52,7 +52,7 @@ class Footer extends React.Component {
             <>
                 <footer>
                     <div className="footer-wrapper">
-                        <p className="footer-description">Built by myself (Rhys) using React Native, with the code viewable on GitHub. This site is hosted on GCP, and uses the font 'Commuter Sans'. No free cookies included, only tracking is your light/dark mode preferences.</p>
+                        <p className="footer-description">Built by myself (Rhys) using React Native, with the code viewable on <a href='https://github.com/rhyscharris/rhys.uk' target="_blank" class='external-link'>GitHub</a>. This site is hosted on GCP, and uses the font <a href='https://www.behance.net/gallery/53569199/Commuters-Sans' target="_blank" class='external-link'>'Commuters Sans'</a>. No free cookies included, only tracking is your light/dark mode preferences.</p>
                         <div class="footer-links">
                             <p class="name"><a href="/">Rhys Harris</a></p>
                             <ul>
