@@ -28,9 +28,12 @@
     display: flex;
     align-items: center;
   }
-  .navbar-logo img {
+  .navbar-logo svg {
     width: 50px;
     height: auto;
+  }
+  .navbar-logo path {
+    fill: var(--text-primary);
   }
   
   .fa-typo3 {

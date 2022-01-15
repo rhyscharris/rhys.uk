@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import { Link } from 'react-router-dom';
 import './Navbar.css';
+import {ReactComponent as ReactLogo} from './logo.svg';
 
 function Navbar(props) {
     const [click, setClick] = useState(false);
@@ -43,12 +44,8 @@ function Navbar(props) {
                                 Design
                             </Link>
                         </li>
-                        <Link to='/' className='navbar-logo desktop-only'>
-                            <img
-                                className=''
-                                alt=''
-                                src={props.src}
-                            />
+                        <Link to='/#' className='navbar-logo desktop-only'>
+                            <ReactLogo />
                         </Link>
                         <li className='nav-item'>
                             <Link to='/coding' className='nav-links' onClick={closeMobileMenu}> {/* once clicked, call function to close the mobile menu */}
