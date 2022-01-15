@@ -10,7 +10,7 @@
 }
 
 [data-theme-preference="teal"] {
-  --accent: #059691;
+  --accent: #03c2bb;
    /*--primary: linear-gradient(90deg, rgb(35, 221, 137) 20%, rgb(8,174,234) 80%); OLD, BEFORE I USED 'PRETTY GRADIENTS'*/
    --primary: linear-gradient(90deg,
    hsl(153deg 73% 50%) 8%,
@@ -59,13 +59,13 @@
   --primary: linear-gradient(90deg, #5926d8 20%, #8e68e6 80%);
   --buttonprimary: linear-gradient(to right, #5926d8 -10%, #8e68e6 110%);
   --gradient-text: linear-gradient(to top, #5926d8 15%, #8e68e6 85%);
-  --accent:#6b3edd;
+  --accent:#986fff;
 }
 [data-theme-preference="pink/blue"] {
   --primary: linear-gradient(90deg, #b6019b 20%, #2aabe4 80%);
   --buttonprimary: linear-gradient(to right, #b6019b -10%, #2aabe4 110%);
   --gradient-text: linear-gradient(to top, #b6019b 15%, #2aabe4 85%);
-  --accent:#6359b9;
+  --accent:#8577ff;
 }
 
 [data-color-preference="auto"] { /*default to light mode if user doesn't support colour schemes*/
@@ -112,10 +112,10 @@
   color: inherit;
 }
 
-.external-link::after { /* any http and https links, apply the following */
+.external-link::after {
   content: '↗';
   color: var(--accent);
-  font-weight: 500;
+  font-weight: 1000;
   position: relative;
   top: -0.4em;
   font-style: normal;
