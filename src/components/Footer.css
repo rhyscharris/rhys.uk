@@ -131,6 +131,9 @@ footer {
         grid-row:unset;
         margin-top:1em;
     }
+    .footer-line {
+        margin-bottom: 1em;
+    }
     .footer-line label {
         min-width: 25%;
     }
@@ -138,6 +141,6 @@ footer {
         display: block;
     }
     .footer-links {
-        margin: 2em 0;
+        margin: 2.5em 0;
     }
 }
