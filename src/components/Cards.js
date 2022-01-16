@@ -37,6 +37,7 @@ function Cards() {
                 buttonLink5='https://github.com/rhyscharris'
               />
               <CardItem
+                id='design'
                 src='images/behance.png'
                 buttonIcon={faBehance}
                 title='Design Projects'
@@ -46,6 +47,7 @@ function Cards() {
                 buttonLink='https://www.behance.net/RhysCHarris'
               />
               <CardItem
+                id='coding'
                 src='images/behance.png'
                 buttonIcon={faStar}
                 title='SongScore'

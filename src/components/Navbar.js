@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react'
-import { Link } from 'react-router-dom';
 import './Navbar.css';
+import { HashLink as Link } from 'react-router-hash-link';
 import {ReactComponent as ReactLogo} from './logo.svg';
 
 function Navbar(props) {
@@ -35,12 +35,12 @@ function Navbar(props) {
                     </Link>
                     <ul className={click ? 'nav-menu active' : 'nav-menu'}> {/* if true, make it active and manu class, if fales, make it just menu */}
                         <li className='nav-item'>
-                            <Link to='/' className='nav-links' onClick={closeMobileMenu}> {/* once clicked, call function to close the mobile menu */}
+                            <Link to='/#' className='nav-links' onClick={closeMobileMenu}> {/* once clicked, call function to close the mobile menu */}
                                 Home
                             </Link>
                         </li>
                         <li className='nav-item'>
-                            <Link to='/design' className='nav-links' onClick={closeMobileMenu}> {/* once clicked, call function to close the mobile menu */}
+                            <Link to='/#design' className='nav-links' onClick={closeMobileMenu}> {/* once clicked, call function to close the mobile menu */}
                                 Design
                             </Link>
                         </li>
@@ -48,7 +48,7 @@ function Navbar(props) {
                             <ReactLogo />
                         </Link>
                         <li className='nav-item'>
-                            <Link to='/coding' className='nav-links' onClick={closeMobileMenu}> {/* once clicked, call function to close the mobile menu */}
+                            <Link to='/#coding' className='nav-links' onClick={closeMobileMenu}> {/* once clicked, call function to close the mobile menu */}
                                 Coding
                             </Link>
                         </li>

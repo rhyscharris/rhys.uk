@@ -54,18 +54,18 @@ class Footer extends React.Component {
                     <div className="footer-wrapper">
                         <p className="footer-description">Built by myself (Rhys) using React, with the code viewable on <a href='https://github.com/rhyscharris/rhys.uk' target="_blank" class='external-link'>GitHub</a>. This site is hosted on GCP, and uses the font <a href='https://www.behance.net/gallery/53569199/Commuters-Sans' target="_blank" class='external-link'>'Commuters Sans'</a>. No free cookies included, only tracking is your theme preferences.</p>
                         <div class="footer-links">
-                            <p class="name"><a href="/">Rhys Harris</a></p>
+                            <p class="name"><a href="/#">Rhys Harris</a></p>
                             <ul>
                                 <li>
-                                    <a href="/" class="">Home</a>
+                                    <a href="/#" class="">Home</a>
                                 </li>
                                 <li>
-                                    <a href="/">Design</a>
+                                    <a href="/#design">Design</a>
                                 </li>
                                 <li>
-                                    <a href="/">Coding</a>
+                                    <a href="/#coding">Coding</a>
                                 </li>
-                                <li><a href="/">CV</a>
+                                <li><a href="/cv">CV</a>
                                 </li>
                             </ul>
                         </div>
