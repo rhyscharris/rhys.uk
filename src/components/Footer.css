@@ -132,9 +132,12 @@ footer {
         margin-top:1em;
     }
     .footer-line label {
-        min-width: 15%;
+        min-width: 25%;
     }
     .footer-wrapper {
         display: block;
+    }
+    .footer-links {
+        margin: 2em 0;
     }
 }

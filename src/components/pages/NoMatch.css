@@ -10,6 +10,10 @@ body,html,.app,#root {
     font-family: commuters_sansbold, sans-serif;
     letter-spacing: 5px;
 }
+.center-group h1 {
+    line-height: 1.2;
+    margin: calc(0.25em + 1vw) 0 calc(0.25em + 2vw);
+}
 .center-group h2 {
     font-size: 1.2em;
     line-height: 1.7;
