@@ -48,7 +48,7 @@ function Cards() {
               />
               <CardItem
                 id='coding'
-                src='images/behance.png'
+                src='images/songscore.png'
                 buttonIcon={faStar}
                 title='SongScore'
                 text='A social music website for reviewing music, following friends, and for discovering new music. Built using Python, Flask, and PostgreSQL - with security integrated.'
@@ -57,7 +57,7 @@ function Cards() {
                 path='/'
               />
               <CardItem
-                src='images/behance.png'
+                src='images/grafana.png'
                 buttonIcon={faHeadset}
                 title='CC Agent'
                 text='Using APIs to monitor the network connection of contact centre agents, and automatically put them as not available for calls. Then, if needed, using Webex to fail them over to LTE/5G'
