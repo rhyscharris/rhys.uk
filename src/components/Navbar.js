@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react'
 import './Navbar.css';
 import { HashLink as Link } from 'react-router-hash-link';
 import {ReactComponent as ReactLogo} from './logo.svg';
+import cv from '../cv.pdf'
 
 function Navbar(props) {
     const [click, setClick] = useState(false);
@@ -40,7 +41,7 @@ function Navbar(props) {
                             </Link>
                         </li>
                         <li className='nav-item'>
-                            <Link to='/cv' className='nav-links' onClick={closeMobileMenu}> {/* once clicked, call function to close the mobile menu */}
+                            <Link to={cv} target='_blank' className='nav-links' onClick={closeMobileMenu}> {/* once clicked, call function to close the mobile menu */}
                                 CV
                             </Link>
                         </li>

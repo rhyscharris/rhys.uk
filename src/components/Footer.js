@@ -4,7 +4,7 @@ import setTheme from '../App';
 import theme from '../App';
 import './Footer.css';
 import useLocalStorage from 'use-local-storage'
-
+import cv from '../cv.pdf'
 
 const storedPreference = localStorage.getItem('color-preference');
 const themeStoredPreference = localStorage.getItem('theme-preference');
@@ -66,7 +66,7 @@ class Footer extends React.Component {
                                 <li>
                                     <a href="/#coding">Coding</a>
                                 </li>
-                                <li><a href="/">CV</a>
+                                <li><a href={cv} target={'_blank'}>CV</a>
                                 </li>
                             </ul>
                         </div>

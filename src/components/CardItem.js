@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Button } from './Buttons';
 import 'aos/dist/aos.css';
 import Aos from 'aos';
+import cv from '../cv.pdf'
 
 
 export function CardItem(props) {

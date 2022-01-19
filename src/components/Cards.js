@@ -8,6 +8,7 @@ import { faBehance } from '@fortawesome/free-brands-svg-icons'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faStar } from '@fortawesome/free-solid-svg-icons'
 import { faHeadset } from '@fortawesome/free-solid-svg-icons'
+import cv from '../cv.pdf'
 
 
 function Cards() {
@@ -25,7 +26,7 @@ function Cards() {
                 buttonLink='https://www.linkedin.com/in/rhyscharris/'
                 buttonIcon2={faFile}
                 buttonText2='CV'
-                buttonLink2='/cv'
+                buttonLink2={cv}
                 buttonIcon3={faTwitter}
                 buttonText3='Twitter'
                 buttonLink3='https://twitter.com/ciscorhys'
