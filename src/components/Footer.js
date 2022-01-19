@@ -60,10 +60,10 @@ class Footer extends React.Component {
                                     <a href="/" class="">Home</a>
                                 </li>
                                 <li>
-                                    <a href="/">Design</a>
+                                    <a href="/#design">Design</a>
                                 </li>
                                 <li>
-                                    <a href="/">Coding</a>
+                                    <a href="/#coding">Coding</a>
                                 </li>
                                 <li><a href="/">CV</a>
                                 </li>
