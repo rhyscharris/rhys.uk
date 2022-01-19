@@ -1,9 +1,10 @@
 import React, {useEffect, useState} from 'react'
-import { Link } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 import setTheme from '../App';
 import theme from '../App';
 import './Footer.css';
 import useLocalStorage from 'use-local-storage'
+
 
 const storedPreference = localStorage.getItem('color-preference');
 const themeStoredPreference = localStorage.getItem('theme-preference');
