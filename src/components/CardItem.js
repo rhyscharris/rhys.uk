@@ -16,7 +16,7 @@ export function CardItem(props) {
       <li className='cards-item' data-aos='fade-right'>
         <div className='cards-item-container'>
           <div className='cards-item-text'>
-            <h5 className='cards-item-title'>{props.title}</h5>
+            <h5 className='cards-item-title' id={props.id}>{props.title}</h5>
             <p>{props.text}</p>
             <div className='button-group'>
               {props.buttonText && <Button buttonStyle='btn--outline--two' linkTo={props.buttonLink} buttonIcon={props.buttonIcon}>{props.buttonText}</Button>} {/*if there actually is text, render the button*/}
