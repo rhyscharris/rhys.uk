@@ -53,7 +53,7 @@ function Cards() {
                 title='SongScore'
                 text='A social music website for reviewing music, following friends, and for discovering new music. Built using Python, Flask, and PostgreSQL - with security integrated.'
                 buttonText='Visit'
-                buttonLink='https://www.linkedin.com/in/rhyscharris/'
+                buttonLink='https://songscore.herokuapp.com/'
                 path='/'
               />
               <CardItem
@@ -62,7 +62,7 @@ function Cards() {
                 title='CC Agent'
                 text='Using APIs to monitor the network connection of contact centre agents, and automatically put them as not available for calls. Then, if needed, using Webex to fail them over to LTE/5G'
                 buttonText='View'
-                buttonLink='https://www.linkedin.com/in/rhyscharris/'
+                buttonLink='https://github.com/rhyscharris/CCX_Agent_Manager'
                 path='/'
               />
             </ul>
