@@ -51,6 +51,7 @@ class Footer extends React.Component {
     render() {
         return (
             <>
+                <svg class="footer-angle" preserveAspectRatio="none" width="1000" height="50" viewBox="0 0 1000 50" xmlns="http://www.w3.org/2000/svg"><path d="M1000 0H0v50z" fill="none" fill-rule="evenodd"></path></svg>
                 <footer>
                     <div className="footer-wrapper">
                         <p className="footer-description">Built by myself (Rhys) using React, with the code viewable on <a href='https://github.com/rhyscharris/rhys.uk' target="_blank" class='external-link'>GitHub</a>. This site is hosted on GCP, and uses the font <a href='https://www.behance.net/gallery/53569199/Commuters-Sans' target="_blank" class='external-link'>'Commuters Sans'</a>. No free cookies included, only tracking is your theme preferences.</p>

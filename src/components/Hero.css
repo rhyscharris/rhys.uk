@@ -21,7 +21,7 @@
     color: white;
     margin: 0 0%;
     padding-bottom: 50px;
-
+    animation: opacity 400ms ease-out both;
 }
 
 .hero-items img {
@@ -71,6 +71,22 @@
 
 .hero-text {
     z-index:99;
+    animation: hero-text 600ms ease-out both;
+}
+@keyframes hero-text {
+    0% {
+        opacity: 0;
+        transform: translateY(-0.5em);
+    }
+    100% {
+        transform: none;
+        opacity: 1;
+    }
+}
+@keyframes opacity {
+    0% {
+        opacity: 0;
+    }
 }
 
 

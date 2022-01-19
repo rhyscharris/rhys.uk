@@ -4,6 +4,22 @@ footer {
     margin-top: auto;
     padding-top: var(--spacing);
     font-size: 0.8em;
+    animation: opacity 400ms 400ms ease-out both;
+}
+
+.footer-angle {
+    /*animation: scale-from-top 600ms 0ms ease-out both;*/
+    display: block;
+    height: 2vw;
+    width: 100%;
+    position: absolute;
+    bottom: -2vw;
+    transform-origin: center top;
+    color: var(--background);
+}
+
+.footer-angle path {
+    fill: currentColor;
 }
 
 .footer-wrapper {

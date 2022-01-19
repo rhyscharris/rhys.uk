@@ -5,6 +5,9 @@ body,html,.app,#root {
     min-height: 100%;
     background: var(--white-background);
 }
+.center-group {
+    animation: hero-text 600ms ease-out both;
+}
 .center-group span{ /* The main typewriter title */
     font-size: 1.5em;
     font-family: commuters_sansbold, sans-serif;
@@ -19,9 +22,13 @@ body,html,.app,#root {
     line-height: 1.7;
     letter-spacing: 2px;
 }
+.center-group h3 {
+    cursor: pointer;
+}
 .center-group a {
     color: white;
     text-decoration: none;
+    cursor: pointer;
 }
 .center-group p {
     -webkit-text-fill-color: transparent;
