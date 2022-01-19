@@ -12,7 +12,7 @@ import { faHeadset } from '@fortawesome/free-solid-svg-icons'
 
 function Cards() {
     return (
-      <div className='cards'>
+      <div className='cards' id='main-content'>
         <div className='cards-container'>
           <div className='cards-wrapper'>
             <ul className='cards-items'>
