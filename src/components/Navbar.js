@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import { Link } from 'react-router-dom';
 import './Navbar.css';
+import { HashLink as Link } from 'react-router-hash-link';
 import {ReactComponent as ReactLogo} from './logo.svg';
 
 function Navbar(props) {
@@ -10,22 +11,9 @@ function Navbar(props) {
     const handleClick = () => setClick(!click); {/* makes it a toggle. ! makes it opposite of current value */}
     const closeMobileMenu = () => setClick(false);
 
-    /*const showButton = () => { {/* shows button depending on screen width *}
-        if(window.innerWidth<=960) {
-            setButton(false);
-        } else {
-            setButton(true);
-        }
-        }*/
-    /*useEffect(() => {
-        showButton()
-    }, []); /* makes sure button renders once. Otherwise, if refreshing, hidden button appears*/
-
-
-    /*window.addEventListener('resize', showButton);*/
-
     return (
         <>
+            <a href='#main-content' className='skip-nav-link'>Skip navigation</a>
             <nav className='navbar'>
                 <div className='navbar-container'>
                     <div className='menu-icon' onClick={handleClick}> {/* calls the handleClick method above */}

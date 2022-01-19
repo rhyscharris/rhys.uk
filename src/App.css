@@ -5,6 +5,10 @@
     font-family: commuters_sansregular, sans-serif;
   }
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root { /* variables that are consistent no matter what colour scheme */
   --spacing: calc(1rem + 2vw);
 }
