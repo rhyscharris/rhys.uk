@@ -5,21 +5,34 @@ footer {
     padding-top: var(--spacing);
     font-size: 0.8em;
     animation: opacity 400ms 400ms ease-out both;
+    background: var(--card-background);
 }
 
 .footer-angle {
-    /*animation: scale-from-top 600ms 0ms ease-out both;*/
-    display: block;
+    animation: scale-from-bottom 600ms 0ms ease-out both;
     height: 2vw;
     width: 100%;
-    position: absolute;
-    bottom: -2vw;
     transform-origin: center top;
-    color: var(--background);
+    transform: rotate(180deg);
+    /* animation: scale-from-top 600ms 0ms ease-out both; */
+    display: block;
+    width: 100%;
+    color: var(--card-background);
+    z-index: 99;
 }
 
 .footer-angle path {
     fill: currentColor;
+}
+
+@keyframes scale-from-bottom {
+    0% {
+        transform: scale(1, 0);
+    }
+    
+    100% {
+        transform: scale(0,0);
+    }
 }
 
 .footer-wrapper {
@@ -29,6 +42,7 @@ footer {
     display: grid;
     /*grid-gap: calc(var(--spacing) / 2) 0;*/
     padding: var(--spacing) 0;
+    padding-top: 2em !important;
     position: relative;
     margin-left: auto;
     margin-right: auto;

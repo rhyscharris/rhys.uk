@@ -13,7 +13,7 @@ import Typewriter from "typewriter-effect";
 function NoMatch () {
     let location = useLocation();
     return (
-        <div className='full-group'>
+        <div className='full-group'  id='main-content'>
             <div className='center-group'>
                 <p>404 - Not Found</p>
                 <h1>

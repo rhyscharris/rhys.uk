@@ -44,7 +44,6 @@ body,html,.app,#root {
     /*--hero-link-underline: var(--c-bD);*/
     display: flex;
     align-items: flex-end;
-    margin-bottom: 1vw;
     padding: var(--spacing) 0;
     position: relative;
     z-index: 3;
