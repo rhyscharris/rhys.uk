@@ -3,7 +3,6 @@ body,html,.app,#root {
     flex-direction: column;
     flex: 1;
     min-height: 100%;
-    background: var(--white-background);
 }
 .center-group {
     animation: hero-text 600ms ease-out both;
