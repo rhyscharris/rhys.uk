@@ -84,7 +84,7 @@ class Footer extends React.Component {
                                 </div>                              
                             </div>
                             <div className='footer-line'>
-                                <label for='color-preference'>Theme</label>
+                                <label for='theme-preference'>Theme</label>
                                 <div className='select-input'>
                                     <select value={this.theme.value} onChange={this.handleThemeChange} id="theme-preference" className='theme-select' aria-label="Select color scheme preference">
                                         <option value="teal">Teal</option>

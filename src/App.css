@@ -108,7 +108,7 @@ html {
 }
 
 .app {
-  background: var(--background);
+  background: var(--card-background);
 }
 
 .external-link {

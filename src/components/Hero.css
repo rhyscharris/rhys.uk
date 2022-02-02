@@ -70,7 +70,7 @@
 }
 
 .hero-text {
-    z-index:99;
+    z-index:1;
     animation: hero-text 600ms ease-out both;
 }
 @keyframes hero-text {
